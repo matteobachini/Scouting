@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.inginf.lsdb.scouting.controller.ReportPageController">
+   <children>
+      <BorderPane prefHeight="84.0" style="-fx-background-color: #cacfcb;">
+         <effect>
+            <Blend />
+         </effect>
+         <left>
+            <ImageView fitHeight="81.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@img/icon.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+         <right>
+            <HBox alignment="CENTER" prefHeight="84.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="logoutPic" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/exit.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="homeImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/home.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="discoveryImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/discovery.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="profileImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </right>
+         <center>
+            <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <ScrollPane hbarPolicy="NEVER" vbarPolicy="ALWAYS">
+         <content>
+            <HBox alignment="CENTER" prefHeight="700.0" prefWidth="1197.0" style="-fx-background-color: RGB(204, 199, 194);">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefWidth="772.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+                     <content>
+                        <VBox fx:id="reportVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="770.0" spacing="20.0" style="-fx-background-color: white;">
+                           <children>
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text fx:id="reportFullName" focusTraversable="true" layoutX="20.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="725.0">
+                                       <font>
+                                          <Font size="46.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <HBox prefHeight="247.0" prefWidth="770.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="260.0">
+                                       <children>
+                                          <ImageView fx:id="reportPicture" fitHeight="208.0" fitWidth="232.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/icon3.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="250.0" prefWidth="199.0">
+                                       <children>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/user.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fx:id="reportUsername" layoutX="48.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/footIcon4.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/footIcon5.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/ageIcon.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fx:id="reportRate" layoutX="55.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="reportPlayerRole" layoutX="55.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="reportPlayerAge" layoutX="55.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/teamIcon.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fx:id="reportPlayerTeam" layoutX="55.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Text>
+                                          <Line endY="-38.0" layoutX="178.0" layoutY="51.0" startY="167.0" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="240.0" prefWidth="318.0">
+                                       <children>
+                                          <ImageView fx:id="reportLikeImg" fitHeight="40.0" fitWidth="54.0" layoutX="14.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/like.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="reportEditImg" fitHeight="40.0" fitWidth="70.0" layoutX="17.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/edit.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="14.0" layoutY="23.0" text="Like:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="reportDate" layoutX="110.0" layoutY="23.0" text="Published on:">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="reportDelete" fitHeight="40.0" fitWidth="200.0" layoutX="14.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/delete.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="reportLikes" layoutX="54.0" layoutY="23.0">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="770.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                                
+                                                         <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Pane>
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="770.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Text fx:id="reportReview" layoutX="23.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="725.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Pane>
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea fx:id="commentsArea" focusTraversable="false" layoutX="29.0" layoutY="39.0" prefHeight="106.0" prefWidth="723.0" />
+                                    <Label layoutX="282.0" layoutY="9.0" text="Write a comment:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="sendButton" layoutX="701.0" layoutY="160.0" mnemonicParsing="false" text="Send" />
+                                    <Button fx:id="cancelButton" layoutX="624.0" layoutY="160.0" mnemonicParsing="false" text="Cancel" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

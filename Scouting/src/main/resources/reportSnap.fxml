@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="snapPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-position: center; -fx-border-radius: 10px; -fx-border-style: solid; -fx-border-width: 3px; -fx-border-color: #cacfcb;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.inginf.lsdb.scouting.controller.ReportSnapshotController">
+   <children>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="118.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="snapImg" fitHeight="191.0" fitWidth="216.0" layoutX="54.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icon3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="291.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/footIcon4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="291.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/timestamp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="291.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/footIcon5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="291.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ageIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="snapTitle" alignment="CENTER" layoutX="9.0" layoutY="25.0" maxWidth="406.0" prefHeight="36.0" prefWidth="406.0">
+         <font>
+            <Font name="Liberation Sans" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="snapUser" layoutX="172.0" layoutY="284.0" maxWidth="159.0" prefHeight="20.0" prefWidth="136.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="snapRate" layoutX="345.0" layoutY="98.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="snapCreationTime" layoutX="345.0" layoutY="137.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="snapPlayerRole" layoutX="345.0" layoutY="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="snapPlayerAge" layoutX="345.0" layoutY="220.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="playerSnapMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="206.0" style="-fx-background-color: white; -fx-background-position: center; -fx-border-radius: 10px; -fx-border-style: solid; -fx-border-color: rgb(12, 163, 216); -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.inginf.lsdb.scouting.controller.PlayerSnapshotController">
+   <children>
+      <Text layoutX="14.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Text fx:id="textFoot" layoutX="14.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foot">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <ImageView fx:id="playerSnapImg" fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/genericUser.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerSnapFullName" layoutX="-7.0" layoutY="14.0" maxWidth="220.0" prefHeight="35.0" prefWidth="220.0" style="-fx-alignment: center;">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerSnapTeam" layoutX="63.0" layoutY="225.0" maxWidth="130.0" prefHeight="27.0" prefWidth="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerSnapRole" layoutX="64.0" layoutY="251.0" maxWidth="130.0" prefHeight="27.0" prefWidth="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerSnapAge" layoutX="63.0" layoutY="278.0" maxWidth="130.0" prefHeight="27.0" prefWidth="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerSnapFoot" layoutX="63.0" layoutY="298.0" maxWidth="130.0" prefHeight="27.0" prefWidth="130.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.inginf.lsdb.scouting.controller.PlayerPageController">
+   <children>
+      <BorderPane prefHeight="84.0" style="-fx-background-color: #cacfcb;">
+         <effect>
+            <Blend />
+         </effect>
+         <left>
+            <ImageView fitHeight="81.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@img/icon.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+         <right>
+            <HBox alignment="CENTER" prefHeight="199.0" prefWidth="764.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="logoutPic" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/exit.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="homeImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/home.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="discoveryImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/discovery.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="profileImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="addReportOrMyProfileImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/newRep1.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </right>
+         <center>
+            <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="644.0" prefWidth="879.0" vbarPolicy="ALWAYS">
+         <content>
+            <HBox alignment="CENTER" prefHeight="697.0" prefWidth="775.0" style="-fx-background-color: RGB(204, 199, 194);">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefWidth="772.0" style="-fx-background-color: white;" vbarPolicy="NEVER">
+                     <content>
+                        <VBox fx:id="playerVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="770.0" spacing="20.0" style="-fx-background-color: white;">
+                           <children>
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="579.0" VBox.vgrow="ALWAYS">
+                              </Pane>
+                              <HBox prefHeight="247.0" prefWidth="770.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="260.0">
+                                       <children>
+                                          <ImageView fx:id="playerImg" fitHeight="208.0" fitWidth="232.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/icon3.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="227.0" prefWidth="492.0">
+                                       <children>
+                                          <Label layoutX="6.0" layoutY="14.0" text="FullName" />
+                                          <Label layoutX="6.0" layoutY="43.0" text="Team" />
+                                          <Label layoutX="6.0" layoutY="72.0" text="Role" />
+                                          <Label layoutX="6.0" layoutY="100.0" text="Age" />
+                                          <Label layoutX="6.0" layoutY="127.0" text="Foot" />
+                                          <TextField fx:id="fullname" editable="false" layoutX="126.0" layoutY="10.0" prefHeight="25.0" prefWidth="145.0" />
+                                          <TextField fx:id="team" editable="false" layoutX="125.0" layoutY="38.0" prefHeight="25.0" prefWidth="146.0" />
+                                          <TextField fx:id="role" editable="false" layoutX="124.0" layoutY="68.0" prefHeight="25.0" prefWidth="147.0" />
+                                          <TextField fx:id="age" editable="false" layoutX="124.0" layoutY="96.0" prefHeight="25.0" prefWidth="147.0" />
+                                          <TextField fx:id="playerFoot" editable="false" layoutX="124.0" layoutY="123.0" prefHeight="25.0" prefWidth="147.0" />
+                                       	  <ImageView fx:id="addWishlist" fitHeight="149.0" fitWidth="135.0" layoutX="323.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/icon3.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="6.0" layoutY="152.0" text="Fifa Rate" />
+                                          <TextField fx:id="playerRate" editable="false" layoutX="124.0" layoutY="148.0" prefHeight="25.0" prefWidth="147.0" />
+                                          <Label layoutX="5.0" layoutY="184.0" text="Wishes" />
+                                          <TextField fx:id="playerNumWishes" editable="false" layoutX="124.0" layoutY="180.0" prefHeight="25.0" prefWidth="147.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </HBox>
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

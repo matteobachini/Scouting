@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="778.0" prefWidth="1197.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.inginf.lsdb.scouting.controller.ProfilePageController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #cacfcb">
+         <left>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="profileImg" fitHeight="144.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/genericUser.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Text fx:id="userName" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <ImageView fx:id="addFollow" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/follow_profile.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <ImageView fx:id="profileDeleteUser" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/delete.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="profileEditUser" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/edit.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="profileGoAdminPage" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/adminIcon.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </left>
+         <right>
+            <VBox prefHeight="124.0" prefWidth="45.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="addReportOrMyProfileImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/newRep1.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="discoveryImg" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/discovery.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="homepageIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="logoutPic" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/exit.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="10.0" top="25.0" />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+      </BorderPane>
+      <ScrollPane hbarPolicy="NEVER">
+         <content>
+            <HBox prefHeight="518.0" prefWidth="1197.0" style="-fx-background-color: RGB(204, 199, 194);">
+               <children>
+                  <VBox prefHeight="451.0" prefWidth="199.0">
+                     <children>
+                        <HBox prefHeight="16.0" prefWidth="118.0">
+                           <children>
+                              <Label fx:id="follower" text="Follower:" />
+                              <Text fx:id="followerNumber" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="following" text="Following:" />
+                              <Text fx:id="followingNumber" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="40.0" top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="reports" text="Reports:" />
+                              <Text fx:id="reportsNumber" strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefWidth="891.0">
+                     <children>
+                        <VBox fx:id="reportVbox" focusTraversable="true" prefHeight="480.0" prefWidth="891.0" style="-fx-background-color: white;" />
+                        <HBox spacing="10.0" style="-fx-alignment: center;">
+                           <children>
+                              <Button fx:id="previousButton" focusTraversable="false" mnemonicParsing="false" text="Previous">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="nextButton" focusTraversable="false" mnemonicParsing="false" text="Next">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </HBox.margin></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

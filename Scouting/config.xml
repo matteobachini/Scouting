@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<it.unipi.dii.inginf.lsdb.scouting.config.ConfigurationParameters>
+	<mongoFirstIp>172.16.5.35</mongoFirstIp>
+	<mongoFirstPort>27017</mongoFirstPort>
+	<mongoSecondIp>172.16.5.36</mongoSecondIp>
+	<mongoSecondPort>27017</mongoSecondPort>
+	<mongoThirdIp>172.16.5.37</mongoThirdIp>
+	<mongoThirdPort>27017</mongoThirdPort>
+	<mongoUsername></mongoUsername>
+	<mongoPassword></mongoPassword>
+	<mongoDbName>scouting</mongoDbName>
+	<neo4jIp>172.16.5.37</neo4jIp>
+	<neo4jPort>7687</neo4jPort>
+	<neo4jUsername>neo4j</neo4jUsername>
+	<neo4jPassword>largescale</neo4jPassword>
+</it.unipi.dii.inginf.lsdb.scouting.config.ConfigurationParameters>

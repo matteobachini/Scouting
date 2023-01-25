@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="userSnapMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="206.0" style="-fx-background-color: white; -fx-background-position: center; -fx-border-radius: 10px; -fx-border-style: solid; -fx-border-color: rgb(12, 163, 216); -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.inginf.lsdb.scouting.controller.UserSnapshotController">
+   <children>
+      <Text layoutX="14.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+  <!--      <Text layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follower">
+         <font>
+            <Font size="15.0" />
+         </font></Text> -->
+      <ImageView fx:id="userSnapImg" fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/genericUser.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userSnapUsername" layoutX="-7.0" layoutY="14.0" maxWidth="220.0" prefHeight="35.0" prefWidth="220.0" style="-fx-alignment: center;">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="userSnapFirstName" layoutX="122.0" layoutY="225.0" maxWidth="71.0" prefHeight="27.0" prefWidth="71.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="userSnapLastName" layoutX="123.0" layoutY="251.0" maxWidth="71.0" prefHeight="27.0" prefWidth="71.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="labelComments" layoutX="15.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="userSnapComments" layoutX="122.0" layoutY="274.0" maxWidth="71.0" prefHeight="27.0" prefWidth="71.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   <!--   <Label fx:id="userSnapFollower" layoutX="123.0" layoutY="278.0" maxWidth="70.0" prefHeight="27.0" prefWidth="70.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>-->
+   </children>
+</AnchorPane>
